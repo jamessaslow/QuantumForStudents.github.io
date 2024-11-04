@@ -28,42 +28,61 @@
     <aside class="sidebar">
       <h2>Categories</h2>
       <ul class="unit-list">
-        <li onclick="showCategory('linear-algebra')">Linear Algebra</li>
-        <li onclick="showCategory('quantum-mechanics')">Quantum Mechanics</li>
-        <li onclick="showCategory('quantum-algorithms')">Quantum Algorithms</li>
-        <li onclick="showCategory('quantum-hardware')">Quantum Hardware</li>
+        <li><a href="#linear-algebra">Linear Algebra</a></li>
+        <li><a href="#quantum-mechanics">Quantum Mechanics</a></li>
+        <li><a href="#quantum-algorithms">Quantum Algorithms</a></li>
+        <li><a href="#quantum-hardware">Quantum Hardware</a></li>
       </ul>
     </aside>
 
-    <!-- Content Area for Category Overview Boxes and Video List -->
+    <!-- Content Area for Category Boxes with Video Titles -->
     <section class="content" id="main-content">
-      <!-- Category Overview Boxes -->
-      <div id="category-overview">
-        <div class="category-box" onclick="showCategory('linear-algebra')">
-          <h3>Linear Algebra</h3>
-          <p>Explore topics like Eigenvalues, Matrix Multiplication, and more.</p>
-        </div>
-        <div class="category-box" onclick="showCategory('quantum-mechanics')">
-          <h3>Quantum Mechanics</h3>
-          <p>Dive into concepts such as the Wavefunction, Entanglement, and Time-Evolution.</p>
-        </div>
-        <div class="category-box" onclick="showCategory('quantum-algorithms')">
-          <h3>Quantum Algorithms</h3>
-          <p>Learn about Grover's Algorithm, Quantum Fourier Transform, and more.</p>
-        </div>
-        <div class="category-box" onclick="showCategory('quantum-hardware')">
-          <h3>Quantum Hardware</h3>
-          <p>Understand Superconducting Qubits, Trapped Ions, and Quantum Dots.</p>
-        </div>
+      <!-- Linear Algebra Section -->
+      <div class="category-box" id="linear-algebra">
+        <h3>Linear Algebra</h3>
+        <ul class="video-list">
+          <li><a href="https://www.youtube.com/watch?v=VideoID1" target="_blank">Eigenvalues and Eigenvectors</a></li>
+          <li><a href="https://www.youtube.com/watch?v=VideoID2" target="_blank">Hermitian Matrices</a></li>
+          <li><a href="https://www.youtube.com/watch?v=VideoID3" target="_blank">Unitary Matrices</a></li>
+          <li><a href="https://www.youtube.com/watch?v=VideoID4" target="_blank">Matrix Multiplication</a></li>
+          <li><a href="https://www.youtube.com/watch?v=VideoID5" target="_blank">The Tensor Product</a></li>
+          <li><a href="https://www.youtube.com/watch?v=VideoID6" target="_blank">Diagonalization</a></li>
+          <li><a href="https://www.youtube.com/watch?v=VideoID7" target="_blank">The Matrix Exponential</a></li>
+        </ul>
       </div>
 
-      <!-- Video List Section -->
-      <ul id="video-list" class="video-list" style="display: none;">
-        <!-- JavaScript will populate this section with video titles -->
-      </ul>
+      <!-- Quantum Mechanics Section -->
+      <div class="category-box" id="quantum-mechanics">
+        <h3>Quantum Mechanics</h3>
+        <ul class="video-list">
+          <li><a href="https://www.youtube.com/watch?v=VideoID8" target="_blank">The Wavefunction</a></li>
+          <li><a href="https://www.youtube.com/watch?v=VideoID9" target="_blank">Measurement</a></li>
+          <li><a href="https://www.youtube.com/watch?v=VideoID10" target="_blank">Time-Evolution</a></li>
+          <li><a href="https://www.youtube.com/watch?v=VideoID11" target="_blank">Entangled States</a></li>
+        </ul>
+      </div>
+
+      <!-- Quantum Algorithms Section -->
+      <div class="category-box" id="quantum-algorithms">
+        <h3>Quantum Algorithms</h3>
+        <ul class="video-list">
+          <li><a href="https://www.youtube.com/watch?v=VideoID12" target="_blank">Shor’s Algorithm</a></li>
+          <li><a href="https://www.youtube.com/watch?v=VideoID13" target="_blank">Grover’s Algorithm</a></li>
+          <li><a href="https://www.youtube.com/watch?v=VideoID14" target="_blank">Quantum Fourier Transform</a></li>
+        </ul>
+      </div>
+
+      <!-- Quantum Hardware Section -->
+      <div class="category-box" id="quantum-hardware">
+        <h3>Quantum Hardware</h3>
+        <ul class="video-list">
+          <li><a href="https://www.youtube.com/watch?v=VideoID15" target="_blank">Superconducting Qubits</a></li>
+          <li><a href="https://www.youtube.com/watch?v=VideoID16" target="_blank">Trapped Ions</a></li>
+          <li><a href="https://www.youtube.com/watch?v=VideoID17" target="_blank">Quantum Dots</a></li>
+        </ul>
+      </div>
     </section>
   </div>
 
-  <script src="scripts.js"></script>
 </body>
 </html>
