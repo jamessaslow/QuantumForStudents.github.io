@@ -42,14 +42,12 @@ const videoData = {
 // Function to load videos based on selected unit
 function loadVideos(unit) {
     const videoList = document.getElementById('video-list');
-    const topicTitle = document.getElementById('topic-title');
 
     // Clear current video list
     videoList.innerHTML = '';
 
     // Get the selected unit data
     const unitData = videoData[unit];
-    topicTitle.textContent = unitData.title;
 
     // Populate video list
     unitData.videos.forEach(video => {
