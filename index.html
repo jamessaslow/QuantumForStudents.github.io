@@ -26,18 +26,39 @@
     
     <!-- Sidebar for Topics and Units -->
     <aside class="sidebar">
-      <h2>Quantum Coursework</h2>
+      <h2>Categories</h2>
       <ul class="unit-list">
-        <li onclick="loadVideos('linear-algebra')">Linear Algebra</li>
-        <li onclick="loadVideos('quantum-mechanics')">Quantum Mechanics</li>
-        <li onclick="loadVideos('quantum-algorithms')">Quantum Algorithms</li>
-        <li onclick="loadVideos('quantum-hardware')">Quantum Hardware</li>
+        <li onclick="showCategory('linear-algebra')">Linear Algebra</li>
+        <li onclick="showCategory('quantum-mechanics')">Quantum Mechanics</li>
+        <li onclick="showCategory('quantum-algorithms')">Quantum Algorithms</li>
+        <li onclick="showCategory('quantum-hardware')">Quantum Hardware</li>
       </ul>
     </aside>
 
-    <!-- Content Area for Video Titles -->
-    <section class="content">
-      <ul id="video-list" class="video-list">
+    <!-- Content Area for Category Overview Boxes and Video List -->
+    <section class="content" id="main-content">
+      <!-- Category Overview Boxes -->
+      <div id="category-overview">
+        <div class="category-box" onclick="showCategory('linear-algebra')">
+          <h3>Linear Algebra</h3>
+          <p>Explore topics like Eigenvalues, Matrix Multiplication, and more.</p>
+        </div>
+        <div class="category-box" onclick="showCategory('quantum-mechanics')">
+          <h3>Quantum Mechanics</h3>
+          <p>Dive into concepts such as the Wavefunction, Entanglement, and Time-Evolution.</p>
+        </div>
+        <div class="category-box" onclick="showCategory('quantum-algorithms')">
+          <h3>Quantum Algorithms</h3>
+          <p>Learn about Grover's Algorithm, Quantum Fourier Transform, and more.</p>
+        </div>
+        <div class="category-box" onclick="showCategory('quantum-hardware')">
+          <h3>Quantum Hardware</h3>
+          <p>Understand Superconducting Qubits, Trapped Ions, and Quantum Dots.</p>
+        </div>
+      </div>
+
+      <!-- Video List Section -->
+      <ul id="video-list" class="video-list" style="display: none;">
         <!-- JavaScript will populate this section with video titles -->
       </ul>
     </section>
