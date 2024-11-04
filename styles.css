@@ -14,7 +14,7 @@ body {
     align-items: center;
 }
 
-/* Top Banner with Title and Navigation */
+/* Sticky Top Banner with Title and Navigation */
 .top-banner {
     width: 100%;
     background-color: #002366;
@@ -23,6 +23,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1em 2em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .site-title {
@@ -47,6 +50,26 @@ body {
     color: #00bcd4;
 }
 
+/* About Us Section */
+.about-section {
+    padding: 2em;
+    background-color: #f4f4f9;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.about-section h2 {
+    font-size: 2em;
+    color: #0047ab;
+    margin-bottom: 0.5em;
+}
+
+.about-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
 /* Main Container */
 .main-container {
     display: flex;
@@ -62,7 +85,7 @@ body {
     background-color: #002366;
     color: white;
     position: sticky;
-    top: 0;
+    top: 80px; /* Position below the navbar */
     height: 100vh;
 }
 
