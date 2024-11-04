@@ -7,106 +7,75 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
     background-color: #f4f4f9;
     color: #333;
 }
 
-/* Navbar */
-nav {
+/* Main Container */
+.main-container {
     display: flex;
-    justify-content: space-between;
-    padding: 1em 2em;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    padding: 2em;
     background-color: #002366;
     color: white;
 }
 
-.nav-links {
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.unit-list {
     list-style: none;
-    display: flex;
-    gap: 1em;
 }
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-}
-
-.nav-links a:hover {
-    color: #00bcd4;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 4em 1em;
-    background: linear-gradient(135deg, #002366, #0047ab);
-    color: white;
-}
-
-.hero h1 {
-    font-size: 2.8em;
-}
-
-.hero p {
+.unit-list li {
     font-size: 1.2em;
-    margin: 1em 0;
-}
-
-.cta-button {
-    padding: 0.6em 1.2em;
-    background-color: #00bcd4;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+    padding: 0.3em 0;
     transition: background 0.3s;
 }
 
-.cta-button:hover {
-    background-color: #008ba3;
+.unit-list li:hover {
+    background-color: #0047ab;
+    padding-left: 10px;
 }
 
-/* Content Wrapper with Sidebar */
-.content-wrapper {
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
+/* Content Area */
+.content {
+    flex-grow: 1;
+    padding: 2em;
 }
 
-.sidebar {
-    width: 200px;
-    background-color: #f4f4f9;
-    padding: 2em 1em;
-}
-
-.sidebar h3 {
+#topic-title {
+    font-size: 1.8em;
     color: #0047ab;
     margin-bottom: 1em;
 }
 
-.sidebar ul {
+.video-list {
     list-style: none;
 }
 
-.sidebar ul li {
-    margin-bottom: 0.8em;
-}
-
-.sidebar ul li a {
-    text-decoration: none;
+.video-list li {
+    font-size: 1.1em;
+    padding: 0.5em 0;
+    cursor: pointer;
     color: #333;
+    transition: color 0.3s;
 }
 
-.sidebar ul li a:hover {
-    color: #00bcd4;
+.video-list li:hover {
+    color: #0047ab;
+    text-decoration: underline;
 }
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 2em 1em;
-    background-color: #002366;
-    color: white;
-    font-size: 0.9em;
-}
-
-/* Other styles remain the same */
