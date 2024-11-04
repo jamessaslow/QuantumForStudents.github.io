@@ -3,60 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quantum For Students</title>
+  <title>Quantum For Students - Khan Academy Style</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
 </head>
 <body>
 
-  <!-- Navbar for easier navigation -->
-  <nav>
-    <div class="logo">Quantum For Students</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#videos">Videos</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- Main Container -->
+  <div class="main-container">
+    
+    <!-- Sidebar for Topics and Units -->
+    <aside class="sidebar">
+      <h2>Quantum Coursework</h2>
+      <ul class="unit-list">
+        <li onclick="loadVideos('linear-algebra')">Linear Algebra</li>
+        <li onclick="loadVideos('quantum-mechanics')">Quantum Mechanics</li>
+        <li onclick="loadVideos('quantum-algorithms')">Quantum Algorithms</li>
+        <li onclick="loadVideos('quantum-hardware')">Quantum Hardware</li>
+      </ul>
+    </aside>
 
-  <!-- Hero Section for impactful welcome -->
-  <section class="hero">
-    <h1>Master Quantum Information Science</h1>
-    <p>Unlock the mysteries of quantum mechanics in 90-second videos</p>
-    <a href="#videos" class="cta-button">Explore Videos</a>
-  </section>
-
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Quantum For Students aims to make quantum education accessible through short, engaging content.</p>
-  </section>
-
-  <!-- Sidebar for easier navigation of video topics -->
-  <section id="videos">
-    <div class="content-wrapper">
-      <aside class="sidebar">
-        <h3>Topics</h3>
-        <ul>
-          <li><a href="#video1">What is a Qubit?</a></li>
-          <li><a href="#video2">Heisenberg’s Principle</a></li>
-          <li><a href="#video3">Double-Slit Experiment</a></li>
-        </ul>
-      </aside>
-
-      <div class="video-container">
-        <!-- Videos dynamically inserted here -->
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 Quantum For Students. All Rights Reserved.</p>
-    <div class="social-icons">
-      <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-      <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-      <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-    </div>
-  </footer>
+    <!-- Content Area for Video Titles -->
+    <section class="content">
+      <h2 id="topic-title">Select a Unit</h2>
+      <ul id="video-list" class="video-list">
+        <!-- JavaScript will populate this section with video titles -->
+      </ul>
+    </section>
+  </div>
 
   <script src="scripts.js"></script>
 </body>
