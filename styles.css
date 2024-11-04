@@ -14,46 +14,32 @@ body {
     align-items: center;
 }
 
-/* Title Bar */
-.title-bar {
-    text-align: center;
-    padding: 1em;
-    background: linear-gradient(135deg, #002366, #0047ab);
-    color: white;
+/* Top Banner with Title and Navigation */
+.top-banner {
     width: 100%;
-}
-
-.title-bar h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.2em;
-}
-
-.title-bar p {
-    font-size: 1.2em;
-}
-
-/* Navigation Bar */
-nav {
-    width: 100%;
-    background-color: #0047ab;
+    background-color: #002366;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+.site-title {
+    font-size: 1.8em;
+    font-weight: 700;
 }
 
 .nav-links {
     display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 1em;
     gap: 1.5em;
-}
-
-.nav-links li {
-    font-size: 1em;
+    list-style: none;
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
+    font-size: 1em;
     transition: color 0.3s;
 }
 
@@ -104,12 +90,6 @@ nav {
 .content {
     flex-grow: 1;
     padding: 2em;
-}
-
-#topic-title {
-    font-size: 1.8em;
-    color: #0047ab;
-    margin-bottom: 1em;
 }
 
 .video-list {
